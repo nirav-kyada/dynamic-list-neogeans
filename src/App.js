@@ -21,7 +21,7 @@ export default function App() {
     <div>
       <h1>Mentions to neoGeans</h1>
       <h1>
-        Give it a try its <a href={gSheetURL}> Dynamic</a>
+        Give it a try its <a href={gSheetURL}> Dynamic...</a>
       </h1>
       <ol className="rolldown-list" id="myList">
         {data.map((item, i) => (
