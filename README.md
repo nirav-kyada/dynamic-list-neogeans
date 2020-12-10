@@ -1,2 +1,2 @@
-# dynamic-list-neogeans
+# react-google-sheets-tabletop-example
 Created with CodeSandbox

@@ -1,0 +1,86 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  font: 1rem sans-serif;
+  color: white;
+  background: black;
+  text-align: center;
+  display: block;
+  width: 600px;
+  margin: auto;
+}
+
+.rolldown-list {
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+
+.rolldown-list li {
+  padding: 1em;
+  margin-bottom: 0.125em;
+  display: block;
+  list-style: none;
+}
+
+.rolldown-list li {
+  visibility: hidden;
+  animation: rolldown 0.7s 1;
+  transform-origin: 50% 0;
+  animation-fill-mode: forwards;
+}
+
+/* .rolldown-list li:nth-child(n) {
+  background-color: #444;
+} */
+
+.rolldown-list li:nth-child(3n + 2) {
+  background-color: #222831;
+  text-decoration: none;
+  text-align: center;
+  border-bottom-right-radius: 1rem;
+}
+.rolldown-list li:nth-child(3n + 1) {
+  background-color: #ffd369;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border-top-left-radius: 1rem;
+}
+a:visited,
+a:link {
+  text-decoration: none;
+  color: pink;
+}
+a:hover {
+  color: skyblue;
+}
+
+#myList {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+}
+
+h1 {
+  text-align: center;
+}
+
+@keyframes rolldown {
+  0% {
+    visibility: visible;
+    transform: rotateX(180deg) perspective(500px);
+  }
+  70% {
+    visibility: visible;
+    transform: rotateX(-20deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotateX(0deg);
+  }
+}
