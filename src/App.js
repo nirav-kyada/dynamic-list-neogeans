@@ -23,7 +23,7 @@ export default function App() {
       <h1>
         Give it a try its <a href={gSheetURL}> Dynamic...</a>
       </h1>
-      <ol className="rolldown-list" id="myList">
+      <ul className="rolldown-list" id="myList">
         {data.map((item, i) => (
           <Fragment key={i}>
             <li>{item.Name}</li>
@@ -33,7 +33,7 @@ export default function App() {
             <br />
           </Fragment>
         ))}
-      </ol>
+      </ul>
     </div>
   );
 }
